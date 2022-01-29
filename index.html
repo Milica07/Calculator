@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>SABIRANJE</title>
+
+		<script language="JavaScript"> 
+		function saberi() { 
+		    var br1 = document.mojaforma.X.value - 0; // konverzija u ceo broj
+		    var br2 = document.mojaforma.Y.value - 0; 
+		    var ukupno = br1 + br2;   //sabiranje br1 + br2 i smestanje rezultata u promenljivu ukupno 
+		    document.mojaforma.zbir.value = ukupno;	
+		} 
+		</script>
+    </head>
+	
+   <body>
+
+	   <form method="post" name="mojaforma">    
+			X &nbsp; = &nbsp;
+            <!-- In word processing and digital typesetting, a non-breaking space, 
+            also called NBSP, required space, hard space, or fixed space 
+            (though it is not of fixed width), 
+            is a space character that prevents an automatic line break at its position. -->
+			<input type="text" name="X" size=5>     <br>
+			Y &nbsp; = &nbsp;
+			<input type="text" name="Y" size=5>     <br><br>  
+			<input type="button" value="SABERI" name="dugme" onClick="saberi()">     <br><br>    
+			<hr>
+			REZULTAT &nbsp; = &nbsp;
+			<input type="text" name="zbir" size=5>     <br>
+            </form> 
+   
+    </body>
+    </html>
